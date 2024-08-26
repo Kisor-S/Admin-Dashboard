@@ -103,6 +103,7 @@ input {
     grid-auto-flow: column;
     grid-template-columns: 0.3fr 2fr;
     align-items: center;
+    column-gap: 0.15em;   
 }
 
 .user-name >p {
@@ -112,4 +113,23 @@ input {
 
 .profile-picture > img{
     width: 5em;
+}
+
+.header-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.5em;
+    justify-items: flex-end;
+}
+
+button {
+    color: #f0f9ff;
+    font-size: medium;
+    background-color:#0ea5e9;
+    border: 1px solid #0ea5e9;
+    border-radius: 1.5em;
+    padding: 0.55em;
+    width: 90%;
 }
