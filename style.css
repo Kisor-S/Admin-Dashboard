@@ -112,6 +112,7 @@ input {
 .user-name >p {
     font-weight:600;
     font-size:95%;
+    color: black;
 }
 
 .profile-picture > img{
@@ -146,10 +147,14 @@ button {
    column-gap: 2em;
 }
 
+p {
+    color: #6b7280;
+}
+
 .projects {
     grid-row: 1/3;
     display:grid;
-    grid-template-rows: 5% 95%;
+    grid-template-rows: 2.2em auto;
 }
 
 .card-container {
@@ -186,13 +191,42 @@ button {
     gap: 2em;
 }
 
+.tools > img {
+    width: 25px;
+}
+
+.announcements > h3 {
+    height: 1.9em;
+}
+
+.info-container {
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 2em 2em 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.infos {
+    padding-bottom: 1em;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.infos:last-of-type{
+    border: none;
+}
+
+.infos > p {
+    font-size: smaller;
+    padding-top: 0.25em;
+}
+
 .trending {
     grid-column: 2/3;
 }
 
-.tools > img {
-    width: 25px;
-}
+
 
 .profiles > img {
     width: 50px;
